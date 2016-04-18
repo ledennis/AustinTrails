@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Franklin Neighborhood Park Trail","location":"4800 Copperbend Blvd.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"South","trail_distance":"0.39"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

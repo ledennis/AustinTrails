@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Hubert C. Schroeter Neighborhood Park Trail","location":"11713 Big Trl.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"Northwest","trail_distance":"0.91"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

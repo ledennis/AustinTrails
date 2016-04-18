@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Emma Long Metro Park Motorcycle Trails","location":"7700 Oak Shores","usage_type":"Motorcycle","ADA_Accessible":"No","area":"Northwest","trail_distance":"8.38"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

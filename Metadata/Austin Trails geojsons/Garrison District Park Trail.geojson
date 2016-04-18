@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Garrison District Park Trail","location":"6001 Manchaca Rd.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"No","area":"South","trail_distance":"0.71"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

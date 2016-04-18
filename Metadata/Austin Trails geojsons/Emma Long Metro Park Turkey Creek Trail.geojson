@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Emma Long Metro Park Turkey Creek Trail","location":"2100 City Park Rd.","usage_type":"Shared Use (Hike/Off-leash)","ADA_Accessible":"No","area":"Northwest","trail_distance":"1.92"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

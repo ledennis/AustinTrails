@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Houston School Park Track","location":"5506 Tallow Tree Dr.","usage_type":"Hike (Track)","ADA_Accessible":"No","area":"South","trail_distance":"0.17"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

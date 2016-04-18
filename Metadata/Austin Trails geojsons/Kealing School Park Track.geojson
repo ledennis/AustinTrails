@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Kealing School Park Track","location":"1600 Rosewood Ave.","usage_type":"Hike (Track)","ADA_Accessible":"Yes","area":"Northeast","trail_distance":"0.18"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

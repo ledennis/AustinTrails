@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Gracywoods Neighborhood Park Trail","location":"12007 Bittern Holw.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"Northwest","trail_distance":"1.00"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

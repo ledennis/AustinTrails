@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Barrington School Park Track","location":"9306 Glenn Ln.","usage_type":"Hike (Track)","ADA_Accessible":"No","area":"Northeast","trail_distance":"0.22" 
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			
+
+		]]
+		}
+	}]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Gullett School Park Track","location":"6200 Treadwell Blvd.","usage_type":"Hike (Track)","ADA_Accessible":"Yes","area":"Northwest","trail_distance":"0.16"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Eilers (Deep Eddy) Neighborhood Park Trail","location":"301 Deep Eddy Ave.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"Central","trail_distance":"0.35"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

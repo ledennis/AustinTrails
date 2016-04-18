@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Joslin Neighborhood Park Track","location":"2106 Cimarron Trl.","usage_type":"Hike (Track)","ADA_Accessible":"No","area":"South","trail_distance":"0.23"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

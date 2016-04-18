@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Kealing School Park Trail","location":"1600 Rosewood Ave.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"Northeast","trail_distance":"0.21"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Gustavo 'Gus' L. Garcia District Park Trail","location":"1201 E. Rundberg Ln.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"No","area":"Northeast","trail_distance":"1.21"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

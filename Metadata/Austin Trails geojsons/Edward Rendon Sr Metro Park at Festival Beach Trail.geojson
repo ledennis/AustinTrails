@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Edward Rendon Sr Metro Park at Festival Beach Trail","location":"28 Robert Martinez Jr St.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"Central","trail_distance":"0.18"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+
+		]]
+		}
+	}]
+}

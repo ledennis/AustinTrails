@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Gillis Park Neighborhood Park Trail","location":"2410 Durwood St.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"No","area":"South","trail_distance":"0.39"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}

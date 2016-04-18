@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Hill School Park Track","location":"8405 Tallwood Dr.","usage_type":"Hike (Track)","ADA_Accessible":"No","area":"Northwest","trail_distance":"0.15"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+	
+		]]
+		}
+	}]
+}
