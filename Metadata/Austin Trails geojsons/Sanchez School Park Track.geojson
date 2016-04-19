@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Sanchez School Park Track","location":"64 Waller St.","usage_type":"Hike (Track)","area":"Central","trail_distance":"0.18", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

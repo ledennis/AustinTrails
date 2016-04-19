@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Mary Moore Searight Metro Park Trail","location":"907 W Slaughter Ln.","usage_type":"Shared Use (Hike and Bike)","area":"South","trail_distance":"3.97", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

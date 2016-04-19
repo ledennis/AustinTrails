@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Onion Creek Greenbelt Trail","location":"7002 Onion Creek Dr.","usage_type":"Shared Use (Hike and Bike)","area":"South","trail_distance":"2.16", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

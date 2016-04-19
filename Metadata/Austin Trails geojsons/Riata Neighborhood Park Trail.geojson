@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Riata Neighborhood Park Trail","location":"12403 Riata Trace Pkwy.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"0.88", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

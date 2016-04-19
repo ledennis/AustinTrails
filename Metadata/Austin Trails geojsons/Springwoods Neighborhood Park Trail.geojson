@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Springwoods Neighborhood Park Trail","location":"12407 Burr Ridge Dr.","usage_type":"Hike (Hiking Only)","area":"Northwest","trail_distance":"0.85", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Shoal Creek Greenbelt Trail and Sidewalk","location":"2610 Shoal Creek Blvd.","usage_type":"Shared Use (Hike and Bike)","area":"C/NW/NE","trail_distance":"6.82", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

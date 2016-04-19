@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Tanglewood Neighborhood Park Trail","location":"11409 Rustic Rock Rd.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"0.48", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

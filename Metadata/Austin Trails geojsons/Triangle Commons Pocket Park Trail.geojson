@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Triangle Commons Pocket Park Trail","location":"4510 W Guadalupe St.","usage_type":"Shared Use (Hike and Bike)","area":"Northeast","trail_distance":"0.30", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

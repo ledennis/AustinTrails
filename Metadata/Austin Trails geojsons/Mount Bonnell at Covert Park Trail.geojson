@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Mount Bonnell at Covert Park Trail","location":"3800 Mount Bonnell Rd.","usage_type":"Hike (Hiking Only)","area":"Northwest","trail_distance":"0.32", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

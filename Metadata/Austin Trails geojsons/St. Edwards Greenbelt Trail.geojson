@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"St. Edwards Greenbelt Trail","location":"7301 Spicewood Springs Rd.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"3.59", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

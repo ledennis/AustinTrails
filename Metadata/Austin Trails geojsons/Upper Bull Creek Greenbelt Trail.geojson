@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Upper Bull Creek Greenbelt Trail","location":"7301 Spicewood Springs Rd.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"2.44", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

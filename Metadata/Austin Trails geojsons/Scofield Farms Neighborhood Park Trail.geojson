@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Scofield Farms Neighborhood Park Trail","location":"12901 Scofield Farms Dr.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"0.35", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

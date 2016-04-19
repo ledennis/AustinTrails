@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Mary Moore Searight Metro Park Off-Leash Trail","location":"9500 S 1st St.","usage_type":"Shared Use (Hike and Off-Leash)","area":"South","trail_distance":"1.22", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

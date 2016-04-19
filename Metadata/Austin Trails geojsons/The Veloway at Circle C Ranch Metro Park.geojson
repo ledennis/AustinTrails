@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"The Veloway at Circle C Ranch Metro Park","location":"4900 La Crosse Ave.","usage_type":"Shared Use (Roller/Inline Skating and Biking)","area":"South","trail_distance":"3.11", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

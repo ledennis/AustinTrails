@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Roy G Guerrero Colorado River Metro Park Trail","location":"400 Grove Blvd.","usage_type":"Shared Use (Hike and Bike)","area":"Central","trail_distance":"1.91", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

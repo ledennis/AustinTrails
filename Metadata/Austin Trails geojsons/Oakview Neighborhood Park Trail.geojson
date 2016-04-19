@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Oakview Neighborhood Park Trail","location":"10810 Oak View Dr.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"0.53", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

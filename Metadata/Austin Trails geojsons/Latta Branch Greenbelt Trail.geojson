@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Latta Branch Greenbelt Trail","location":"7910 Beckett Rd.","usage_type":"Shared Use (Hike and Bike)","area":"South","trail_distance":"1.76", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+
+		
+
+		]]
+		}
+	}]
+}

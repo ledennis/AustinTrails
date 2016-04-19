@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Spicewood Valley Trail","location":"11103 Callanish Park Dr.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"1.32", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

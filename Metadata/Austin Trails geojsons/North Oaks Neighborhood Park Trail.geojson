@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"North Oaks Neighborhood Park Trail","location":"820 Plaza Dr.","usage_type":"Shared Use (Hike and Bike)","area":"Northeast","trail_distance":"0.18", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

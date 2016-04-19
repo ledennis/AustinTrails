@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Patterson Neighborhood Park Trail","location":"4200 Brookview Rd.","usage_type":"Shared Use (Hike and Bike)","area":"Northeast","trail_distance":"0.73", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

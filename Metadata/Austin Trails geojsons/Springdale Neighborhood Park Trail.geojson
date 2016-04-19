@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Springdale Neighborhood Park Trail","location":"1175 Nickols Ave.","usage_type":"Shared Use (Hike and Bike)","area":"Northeast","trail_distance":"0.21", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

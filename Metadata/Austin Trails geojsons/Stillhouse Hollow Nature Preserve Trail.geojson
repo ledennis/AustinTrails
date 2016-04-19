@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Stillhouse Hollow Nature Preserve Trail","location":"7810 Sterling Dr.","usage_type":"Hike (Hiking Only)","area":"Northwest","trail_distance":"0.30", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

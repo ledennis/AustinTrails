@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Nicholas Dawson Neighborhood Park Trail","location":"704 W James St.","usage_type":"Shared Use (Hike and Bike)","area":"South","trail_distance":"0.17", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

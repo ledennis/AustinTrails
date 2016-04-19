@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Stephenson Nature Preserve and Outdoor Education Center Trail","location":"7009 Stage Coach Trl.","usage_type":"Hike (Hiking Only)","area":"South","trail_distance":"4.08", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

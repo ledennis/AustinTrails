@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Mary Moore Searight Metro Park Equestrian Trail","location":"907 W Slaughter Ln.","usage_type":"Shared Use (Hike/Bike/Equestrian)","area":"South","trail_distance":"2.07", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}

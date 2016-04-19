@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"North Star Greenbelt Trail","location":"11701 Tallow Field Way","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"1.46", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+
+		
+
+		]]
+		}
+	}]
+}
