@@ -4,14 +4,13 @@
 	{
 		"type":"Feature","properties":
 		{
-			"trail_name":"Barrington School Park Track","location":"9306 Glenn Ln.","usage_type":"Hike (Track)","ADA_Accessible":"No","area":"Northeast","trail_distance":"0.22" 
+			"trail_name":"Barrington School Park Track","location":"9306 Glenn Ln.","usage_type":"Hike (Track)","area":"Northeast","trail_distance":"0.22","ADA_Accessible":"No"
 		},
 		"geometry":
 		{
 		"type":"MultiLineString","coordinates":
 		[[
-			
-
+			[-97.696539,30.361915],[-97.696384,30.361831],[-97.695472,30.361396],[-97.695386,30.361368],[-97.695322,30.361401],[-97.695075,30.361808],[-97.695053,30.361887],[-97.695123,30.36191],[-97.696137,30.362442],[-97.696217,30.362461],[-97.696539,30.361993],[-97.696571,30.361933],[-97.69647,30.361882]
 		]]
 		}
 	}]
