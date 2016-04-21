@@ -75,8 +75,8 @@ app.controller('ctrl', function($scope, $http) {
         map.data.loadGeoJson('https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/Metadata/AustinParksandRec.json?token=AEby-Ldh8x6n69_Y23HaemEHpntEzyqyks5XIpwYwA%3D%3D');
         map.data.setStyle({
             fillColor: 'orange',
-            strokeWeight: 1,
-            strokeColor: 'red'
+            strokeWeight: 3,
+            strokeColor: '#ef443c'
         });
     }
     google.maps.event.addDomListener(window, 'load', initMap);
