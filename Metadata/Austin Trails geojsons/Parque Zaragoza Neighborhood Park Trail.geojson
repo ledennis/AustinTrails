@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Parque Zaragoza Neighborhood Park Trail","location":"2608 Gonzales St.","usage_type":"Shared Use (Hike and Bike)","area":"Northeast","trail_distance":"0.12", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.711576,30.261935],[-97.711367,30.262164],[-97.711248,30.262127],[-97.711069,30.262125],[-97.710559,30.262273],[-97.709846,30.262255],[-97.709081,30.26216]
+		]]
+		}
+	}]
+}

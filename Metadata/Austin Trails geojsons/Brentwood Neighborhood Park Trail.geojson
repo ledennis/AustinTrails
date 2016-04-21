@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Brentwood Neighborhood Park Trail","location":"6807 Yates Ave.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"No","area":"Northwest","trail_distance":"0.17" 
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.73041,30.340412],[-97.73056,30.340486],[-97.73078,30.340625],[-97.730695,30.340778],[-97.730598,30.340963],[-97.730373,30.34106],[-97.730303,30.341106],[-97.730185,30.341005],[-97.730153,30.340824],[-97.730142,30.340676],[-97.73034,30.340528],[-97.730394,30.340444]
+
+		]]
+		}
+	}]
+}

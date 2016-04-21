@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Waterloo Neighborhood Park Trail","location":"1200 Red River St.","usage_type":"Shared Use (Hike and Bike)","area":"Central","trail_distance":"0.61", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.735442,30.27251],[-97.735445,30.272628],[-97.735386,30.272698],[-97.735284,30.272732],[-97.735404,30.273064],[-97.735345,30.273214],[-97.735244,30.27333],[-97.735303,30.273455],[-97.735324,30.273629],[-97.735378,30.273659],[-97.735394,30.273826],[-97.735337,30.273953],[-97.735386,30.273999],[-97.735278,30.274379],[-97.735158,30.274442]
+		]]
+		}
+	}]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Quail Creek Neighborhood Park Trail","location":"1101 Mearns Meadow Blvd.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"0.21", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.702279,30.369811],[-97.702285,30.369681],[-97.701898,30.36932],[-97.701147,30.36913],[-97.700273,30.368436]
+		]]
+		}
+	}]
+}

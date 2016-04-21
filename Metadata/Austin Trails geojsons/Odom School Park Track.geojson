@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Odom School Park Track","location":"1001 Sahara Ave.","usage_type":"Hike (Track)","area":"South","trail_distance":"0.13", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.78774,30.205799],[-97.787954,30.205748],[-97.788255,30.205252],[-97.788142,30.205025],[-97.787922,30.205066],[-97.787579,30.205613],[-97.787729,30.205797]
+		]]
+		}
+	}]
+}

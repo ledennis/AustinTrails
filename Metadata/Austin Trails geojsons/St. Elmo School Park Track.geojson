@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"St. Elmo School Park Track","location":"4312 S 1st St.","usage_type":"Hike (Track)","area":"South","trail_distance":"0.17", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.774752,30.222589],[-97.774769,30.222478],[-97.774377,30.22239],[-97.774162,30.222293],[-97.774028,30.222311],[-97.773599,30.222682],[-97.773604,30.222849],[-97.773873,30.222886],[-97.774742,30.222612]
+		]]
+		}
+	}]
+}

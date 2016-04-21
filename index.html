@@ -1,0 +1,117 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @ledennis
+ Watch 5
+  Star 0
+  Fork 0 spencer-shadley/austinparks
+ Code  Issues 1  Pull requests 0  Wiki  Pulse  Graphs
+Tree: d54bf95deb Find file Copy pathaustinparks/index.html
+d54bf95  2 days ago
+@aliseisaksen aliseisaksen made sm 3 column view
+2 contributors @aliseisaksen @brdleyb
+RawBlameHistory     87 lines (75 sloc)  2.16 KB
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Welcome to OpenShift</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Latest JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <style type="text/css">
+        .full-height {
+            height: 100%;
+            color: yellow;
+        }
+        html,body,.container
+        {
+            height:100%;
+        }
+        .container
+        {
+            width: 100%;
+        }
+        .row
+        {
+            height: 100%;
+        }
+        @media(max-width:767px){
+            #map {
+                height: 75%;
+            }
+            #info {
+                height: 25%;
+            }
+            #list {
+                display: none;
+            }
+        }
+        @media(min-width:768px) and (max-width:991px){
+            #map {
+                height: 75%;
+            }
+            #info {
+                height: 25%;
+            }
+            #list {
+                display: none;
+            }
+        }
+        @media(min-width:992px) and (max-width:1199px){
+            #map, #info, #list {
+                height: 100%;
+            }
+        }
+        @media(min-width:1200px){
+            #map, #info, #list {
+                height: 100%;
+            }
+        }
+
+
+        #logo{
+            max-height: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body class="full-height">
+
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                     <a class="navbar-brand" href="#">
+                     <img id="logo" alt="trailsLogo" src="assets/ParkRecLogo.jpg">
+                     </a>
+                </div>
+             </div>
+        </nav>
+        <div class="row full-height">
+            <div class="col-xs-hidden col-sm-hidden  col-md-2 col-lg-2 full-height" id="list" style="background-color: blue">list</div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-push-4 col-lg-6 full-height" id="map" style="background-color: red">map</div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-md-pull-6 col-lg-4 full-height" id="info" style="background-color: green">info</div>           
+        </div>
+    </div>
+
+</body>
+</html>
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
