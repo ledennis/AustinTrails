@@ -72,7 +72,7 @@ app.controller('ctrl', function($scope, $http) {
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById("map"), mapProp);
-        map.data.loadGeoJson('https://data.austintexas.gov/Government/Urban-Trails/bxbe-ndaw');
+        map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json');
     }
     google.maps.event.addDomListener(window, 'load', initMap);
 
