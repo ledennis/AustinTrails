@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Walnut Creek Metropolitan Park Trail","location":"12138 N Lamar Blvd.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"5.32", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.680773,30.40138],[-97.68073,30.402787],[-97.68161,30.403379],[-97.681052,30.402602],[-97.680945,30.400954],[-97.681202,30.400973],[-97.68146,30.402861],[-97.681975,30.40312],[-97.681782,30.403545],[-97.682275,30.403434],[-97.682383,30.402935],[-97.68161,30.402139],[-97.681181,30.399788],[-97.680795,30.399307]
+		]]
+		}
+	}]
+}

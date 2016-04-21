@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Peace Point at Town Lake Metro Park Trail","location":"2200 S Lakeshore Blvd.","usage_type":"Shared Use (Hike and Bike)","area":"Central","trail_distance":"0.13", "ADA_Accessible":"Yes"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.722919,30.24517],[-97.72301,30.245103],[-97.723133,30.244882],[-97.722927,30.244806],[-97.72286,30.244824],[-97.722825,30.245038],[-97.722919,30.245158]
+		]]
+		}
+	}]
+}

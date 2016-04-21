@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Red Bud Isle Park Trail","location":"3401 Red Bud Trl.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"0.52", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.787257,30.290987],[-97.7873,30.290806],[-97.787294,30.290366],[-97.786924,30.289731],[-97.786329,30.288976],[-97.786179,30.289013],[-97.786007,30.289203],[-97.786023,30.289463],[-97.786157,30.289852],[-97.786463,30.2905],[-97.786661,30.290778],[-97.786597,30.290968],[-97.786656,30.291093],[-97.78708,30.291116]
+		]]
+		}
+	}]
+}

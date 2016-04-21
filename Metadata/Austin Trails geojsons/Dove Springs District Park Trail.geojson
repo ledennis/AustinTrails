@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Dove Springs District Park Trail","location":"5801 Ainez Dr.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"Yes","area":"South","trail_distance":"1.27"  
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.738859,30.188686],[-97.73858,30.18863],[-97.738173,30.188537],[-97.737797,30.188389],[-97.7374,30.188185],[-97.737164,30.187962],[-97.737164,30.187777],[-97.73711,30.18761],[-97.73725,30.187536],[-97.73754,30.187508],[-97.73784,30.187508],[-97.738054,30.187462],[-97.738183,30.187378],[-97.738183,30.187313]
+
+		]]
+		}
+	}]
+}

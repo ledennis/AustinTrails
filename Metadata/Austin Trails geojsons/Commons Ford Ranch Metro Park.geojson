@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Commons Ford Ranch Metro Park","location":"614 N Commons Ford Rd.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"No","area":"South","trail_distance":"2.00" 
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.887668,30.338342],[-97.887754,30.339546],[-97.887775,30.340454],[-97.888011,30.341213],[-97.889471,30.341102],[-97.891659,30.340694],[-97.89314,30.340435],[-97.894062,30.340176],[-97.894663,30.339917],[-97.893784,30.338639],[-97.893719,30.337861],[-97.893569,30.337398]
+
+		]]
+		}
+	}]
+}

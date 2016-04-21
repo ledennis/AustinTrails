@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Cherrywood Pocket Park Trail","location":"1600 E 34th St.","usage_type":"Shared Use (Hike and Bike)","ADA_Accessible":"No","area":"Northeast","trail_distance":"0.05" 
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.714947,30.289724],[-97.715044,30.289759],[-97.715162,30.289822],[-97.715242,30.289843],[-97.715315,30.289875],[-97.715355,30.289905],[-97.715486,30.289914],[-97.715588,30.289914],[-97.715661,30.289903],[-97.715655,30.289882]
+
+		]]
+		}
+	}]
+}

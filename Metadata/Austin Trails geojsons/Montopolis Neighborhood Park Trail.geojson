@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Montopolis Neighborhood Park Trail","location":"1200 Montopolis Dr.","usage_type":"Shared Use (Hike and Bike)","area":"South","trail_distance":"0.27", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.699012,30.232128],[-97.699838,30.232694],[-97.700745,30.233069],[-97.701185,30.232499],[-97.70089,30.231813],[-97.700273,30.231535],[-97.699972,30.231679],[-97.69957,30.231238]
+		]]
+		}
+	}]
+}

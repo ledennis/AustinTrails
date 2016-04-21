@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+	{
+		"type":"Feature","properties":
+		{
+			"trail_name":"Lower Bull Creek Greenbelt Trail","location":"5307 Old Spicewood Springs Rd.","usage_type":"Shared Use (Hike and Bike)","area":"Northwest","trail_distance":"4.05", "ADA_Accessible":"No"
+		},
+		"geometry":
+		{
+		"type":"MultiLineString","coordinates":
+		[[
+			[-97.770429,30.382691],[-97.769946,30.382658],[-97.769388,30.382778],[-97.768653,30.383139],[-97.767779,30.383153],[-97.766228,30.38338]
+		]]
+		}
+	}]
+}
