@@ -72,6 +72,8 @@ var TrailApp = function() {
 
         self.app.use(express.static(__dirname + '/'));
 
+        self.app.use(express.static(__dirname + '/assets'));
+
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
             //noinspection JSUnfilteredForInLoop
@@ -84,15 +86,14 @@ var TrailApp = function() {
         self.setupTerminationHandlers();
         self.initializeServer();
 
-        /* Can't currently use */
         // parse JSON
         request(trailDataUrl, function(err, trails, body) {
             if(err)                          console.err(err);
-            else if(trails.statusCode != 200) console.err(trails.statusCode + ' in trail request');
+            else if(trail.statusCode != 200) console.err(trails.statusCode + ' in trail request');
             else {
                 trailData = JSON.parse(body);
-                trailData.forEach(function(trail) {
-                    trail.features.properties.location = eval("(" + trail.features.properties.location + ")"); 
+                trailData.features.forEach(function(trail) {
+                    trail.properties.trail_name = eval("(" + trail.properties.trail_name + ")"); 
                 });
             }
         });
@@ -116,15 +117,26 @@ trailApp.start();
 
 trailApp.app.get('/trailnames', function(req, res) {
     var trailNames = [];
-    trailData.forEach(function(trail) {
-        trailNames.push(trail.title);
+    trailData.features.forEach(function(trail) {
+        trailNames.push(trail.properties.trail_name);
     });
     res.send(trailNames);
 });
 
+trailApp.app.get('/trailcoords', function(req, res) {
+    var trailCoords = [];
+    trailData.features.forEach(function(trail) {
+       trailCoords.push({
+           name: trail.properties.trail_name,
+           latitude: trail.geometry.coordinates[0][0],
+           longitude: trail.geometry.coordinates[0][1]})
+    });
+    res.send(trailCoords);
+});
+
 trailApp.app.get('/traildata/:trailname', function(req, res) {
-    trailData.forEach(function(trail) {
-        if(trail.title === req.params.trailname)
+    trailData.features.forEach(function(trail) {
+        if(trail.properties.trail_name === req.params.trailname)
             res.json(trail);
     });
 });

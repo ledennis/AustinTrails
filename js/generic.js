@@ -1,33 +1,23 @@
 var currentPoolJson;
 var map;
-var marker;
-var infoWindow;
+var selectedMarker;
 
-$(function(){
-    $("#info").hide();
-});
+var nameToMarker = {};
 
 var app = angular.module('app', []);
 app.controller('ctrl', function($scope, $http) {
     $http({
         method : "GET",
-        url : "poolnames"
+        url : "poolcoords"
     }).then(function(res) {
-        res.data.forEach(function(poolName) {
+        res.data.forEach(function(pool) {
+            nameToMarker[pool.name] = createMarker(pool.latitude, pool.longitude, pool.name);
             $('#poolNameList').append(
-                $('<li id="' + poolName + '">').append(
+                $('<li id="' + pool.name + '">').append(
                     $('<button class="btn btn-link">').append(
-                        poolName
+                        pool.name
                     ).click(function() {
-                        setPool(poolName);
-                        if(!($('#info').is(":visible"))) {    
-                            $('#info').show();
-                            
-                            // Messy...
-                            $('#map').removeClass('col-md-10').removeClass('col-lg-10');
-                            $('#map').addClass('col-md-push-3').addClass('col-lg-7').addClass('col-lg-7');
-                            initMap();
-                        }
+                        setPool(pool.name);
                     })
                 )
             );
@@ -40,12 +30,23 @@ app.controller('ctrl', function($scope, $http) {
             url: "pooldata/" + poolName
         }).then(function(res) {
 
+            if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-10.png');
+            var marker = nameToMarker[poolName];
+            selectedMarker = marker;
+            marker.setIcon('assets/pool-icon-50.png');
+
+            if(!($('#info').is(":visible"))) {    
+                $('#info').removeClass('hidden');
+
+                // Messy...
+                $('#map').removeClass('col-md-10').removeClass('col-lg-10');
+                $('#map').addClass('col-md-push-3').addClass('col-md-7').addClass('col-lg-7');
+                // initMap();
+            }
+
             // save data for later reference
             currentPoolJson = res.data;
             $scope.poolJson = res.data;
-
-            // create marker for pool
-            setMarker(currentPoolJson.location_1.latitude, currentPoolJson.location_1.longitude, currentPoolJson.pool_name);
 
             // format opening/closing hours based on availability
             var open_div = document.getElementById("status_open");
@@ -53,8 +54,7 @@ app.controller('ctrl', function($scope, $http) {
             if (currentPoolJson.status === "Closed") {
                 closed_div.classList.remove("hidden");
                 open_div.classList.add("hidden");
-                var new_open_date = currentPoolJson.open_date.substring(0,9);
-                currentPoolJson.open_date = new Date(new_open_date).toDateString();
+                currentPoolJson.open_date = new Date(currentPoolJson.open_date).toDateString();
             } else {
                 open_div.classList.remove("hidden");
                 closed_div.classList.add("hidden");
@@ -86,28 +86,21 @@ app.controller('ctrl', function($scope, $http) {
         map.panTo(panPoint);
     }
 
-    function setMarker(latitude, longitude, infoData) {
-        // create markers (pins)
-        if(marker) {
-            var latlng = new google.maps.LatLng(latitude, longitude);
-            marker.setPosition(latlng);
-            marker.setAnimation(google.maps.Animation.DROP);
-            infoWindow.setContent(infoData);
-        } else {
-            marker = new google.maps.Marker({
-                position: {lat: Number(latitude), lng: Number(longitude)},
-                animation: google.maps.Animation.DROP
-            });
-            infoWindow = new google.maps.InfoWindow({
-                content: infoData
-            });
-        }
-        marker.setMap(map);
-
-        marker.addListener('click', function() { // TODO: use mouseover
-            infoWindow.open(map, marker);
-            // setPool(infoData);
+    function createMarker(latitude, longitude, infoData) {
+        var marker = new google.maps.Marker({
+            position: {lat: Number(latitude), lng: Number(longitude)},
+            animation: google.maps.Animation.DROP,
+            icon: "assets/icon-circle-10.png"
         });
+
+        marker.setMap(map);
+        marker.addListener('click', function() {
+            if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-10.png');
+            selectedMarker = marker;
+            setPool(infoData);
+            marker.setIcon("assets/pool-icon-50.png");
+
+        });
+        return marker;
     }
 });
-
