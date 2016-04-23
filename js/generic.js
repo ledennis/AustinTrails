@@ -72,7 +72,7 @@ app.controller('ctrl', function($scope, $http) {
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById("map"), mapProp);
-        map.data.loadGeoJson('hhttps://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/traildata.geojson');
+        map.data.loadGeoJson('https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/traildata.geojson');
         map.data.setStyle({
             fillColor: 'orange',
             strokeWeight: 3,
