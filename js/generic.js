@@ -1,4 +1,4 @@
-var currentTrailJson;
+var currentPoolJson;
 var map;
 var selectedMarker;
 
@@ -8,30 +8,30 @@ var app = angular.module('app', []);
 app.controller('ctrl', function($scope, $http) {
     $http({
         method : "GET",
-        url : "trailcoords"
+        url : "poolcoords"
     }).then(function(res) {
-        res.data.forEach(function(trail) {
-            nameToMarker[trail.name] = createMarker(trail.latitude, trail.longitude, trail.name);
-            $('#trailNameList').append(
-                $('<li id="' + trail.name + '">').append(
+        res.data.forEach(function(pool) {
+            nameToMarker[pool.name] = createMarker(pool.latitude, pool.longitude, pool.name);
+            $('#poolNameList').append(
+                $('<li id="' + pool.name + '">').append(
                     $('<button class="btn btn-link">').append(
-                        trail.name
+                        pool.name
                     ).click(function() {
-                        setTrail(trail.name);
+                        setPool(pool.name);
                     })
                 )
             );
         });
     });
 
-    function setTrail(trailName) {
+    function setPool(poolName) {
         $http({
             method: "GET",
-            url: "traildata/" + trailName
+            url: "pooldata/" + poolName
         }).then(function(res) {
 
             if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-10.png');
-            var marker = nameToMarker[trailName];
+            var marker = nameToMarker[poolName];
             selectedMarker = marker;
             marker.setIcon('assets/pool-icon-50.png');
 
@@ -45,20 +45,20 @@ app.controller('ctrl', function($scope, $http) {
             }
 
             // save data for later reference
-            currentTrailJson = res.data;
-            $scope.trailJson = res.data;
+            currentPoolJson = res.data;
+            $scope.poolJson = res.data;
 
             // format opening/closing hours based on availability
-            // var open_div = document.getElementById("status_open");
-            // var closed_div = document.getElementById("status_closed");
-            // if (currentPoolJson.status === "Closed") {
-            //     closed_div.classList.remove("hidden");
-            //     open_div.classList.add("hidden");
-            //     currentPoolJson.open_date = new Date(currentPoolJson.open_date).toDateString();
-            // } else {
-            //     open_div.classList.remove("hidden");
-            //     closed_div.classList.add("hidden");
-            // }
+            var open_div = document.getElementById("status_open");
+            var closed_div = document.getElementById("status_closed");
+            if (currentPoolJson.status === "Closed") {
+                closed_div.classList.remove("hidden");
+                open_div.classList.add("hidden");
+                currentPoolJson.open_date = new Date(currentPoolJson.open_date).toDateString();
+            } else {
+                open_div.classList.remove("hidden");
+                closed_div.classList.add("hidden");
+            }
         });
     }
 
@@ -72,12 +72,6 @@ app.controller('ctrl', function($scope, $http) {
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         map = new google.maps.Map(document.getElementById("map"), mapProp);
-        map.data.loadGeoJson('https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/Metadata/AustinParksandRec.json?token=AEby-Ldh8x6n69_Y23HaemEHpntEzyqyks5XIpwYwA%3D%3D');
-        map.data.setStyle({
-            fillColor: 'orange',
-            strokeWeight: 3,
-            strokeColor: '#ef443c'
-        });
     }
     google.maps.event.addDomListener(window, 'load', initMap);
 
@@ -104,3 +98,4 @@ app.controller('ctrl', function($scope, $http) {
         return marker;
     }
 });
+

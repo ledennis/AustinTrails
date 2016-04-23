@@ -6,6 +6,9 @@
 html,body,.container {
 	height: 100%;
 }
+/*#info {
+	transition: width 2s, transform 2s;
+}*/
 .container {
 	width: 100%;
 	font-weight: normal;
