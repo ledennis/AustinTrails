@@ -10,7 +10,7 @@ html,body,.container {
 	transition: width 2s, transform 2s;
 }*/
 .container {
-	width: 100%;
+	width: 140%;
 	font-weight: normal;
 }
 .picPrev {
@@ -35,27 +35,6 @@ html,body,.container {
 #map {
 	background-color: lightgrey;
 }
-ul#poolNameList {
-	list-style-type: none;
-	padding-left: 0;
-}
-#poolNameList .btn-link {
-	color: white;
-	padding: 2px;
-	max-width: inherit;
-	word-wrap: break-word;
-	word-break:break-all;
-    width: 100%;
-    text-align: left;
-    transition: all .15s ease;
-}
-
-#poolNameList .btn-link:focus, .btn-link:hover{
-	outline:none;
-	font-weight: bold;
-	text-decoration: none;
-	font-size: 18px;
-}
 
 ul#trailNameList {
 	list-style-type: none;
@@ -70,6 +49,7 @@ ul#trailNameList {
     width: 100%;
     text-align: left;
     transition: all .15s ease;
+    font-size: 16px;
 }
 
 #trailNameList .btn-link:focus, .btn-link:hover{
@@ -87,9 +67,7 @@ h3 {
 	font-size:15px;
 	font-weight: normal;
 }
-#pool_status h3 {
-	font-weight: bold;
-}
+
 h4 {
 	font-weight: normal;
 }

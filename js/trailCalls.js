@@ -48,8 +48,8 @@ app.controller('ctrl', function($scope, $http) {
             }
 
             // save data for later reference
-            currentTrailJson = res.data.features;
-            $scope.trailJson = res.data.features;
+            currentTrailJson = res.data;
+            $scope.trailJson = res.data;
 
             // format opening/closing hours based on availability
             // var open_div = document.getElementById("status_open");
@@ -77,6 +77,10 @@ app.controller('ctrl', function($scope, $http) {
         map = new google.maps.Map(document.getElementById("map"), mapProp);
         getCenter = map.getCenter();
         map.data.loadGeoJson('trails.json');
+        map.data.setStyle({
+          strokeWeight: 3,
+          strokeColor: '#ef443c'
+        });
     }
     google.maps.event.addDomListener(window, 'load', initMap);
 

@@ -162,8 +162,11 @@ poolApp.app.get('/pooldata/:poolname', function(req, res) {
     });
 });
 
-poolApp.app.get('/traildata', function(req, res) {
-    res.send(trailData);
+poolApp.app.get('/traildata/:trailname', function(req, res) {
+    trailData.features.forEach(function(trail) {
+        if(trail.properties.trail_name === req.params.trailname)
+            res.json(trail);
+    });
 });
 
 poolApp.app.get('/pools', function(req, res) {
@@ -171,5 +174,5 @@ poolApp.app.get('/pools', function(req, res) {
 });
 
 poolApp.app.get('/trails', function(req, res) {
-    res.sendfile('original.html');
+    res.sendfile('trailSide.html');
 });
