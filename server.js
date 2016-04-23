@@ -91,7 +91,7 @@ var TrailApp = function() {
             // else if(trails.statusCode != 200) console.err(trails.statusCode + ' in trail request');
             else {
                 trailData = JSON.parse(body);
-                trailData.features.forEach(function(trail) {
+                trailData.forEach(function(trail) {
                     trail.properties.trail_name = eval("(" + trail.properties.trail_name + ")"); 
                 });
             }
@@ -108,7 +108,7 @@ var TrailApp = function() {
 };
 
 /** JSON stuff **/
-var trailDataUrl = "https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/traildata.geojson";
+var trailDataUrl = "https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/traildataJSON.json";
 
 var trailApp = new TrailApp();
 trailApp.initialize();
@@ -116,7 +116,7 @@ trailApp.start();
 
 trailApp.app.get('/trailnames', function(req, res) {
     var trailNames = [];
-    trailData.features.forEach(function(trail) {
+    trailData.forEach(function(trail) {
         trailNames.push(trail.properties.trail_name);
     });
     res.send(trailNames);
@@ -124,7 +124,7 @@ trailApp.app.get('/trailnames', function(req, res) {
 
 trailApp.app.get('/trailcoords', function(req, res) {
     var trailCoords = [];
-    trailData.features.forEach(function(trail) {
+    trailData.forEach(function(trail) {
        trailCoords.push({
            name: trail.properties.trail_name,
            latitude: trail.geometry.coordinates[0][0],
@@ -134,7 +134,7 @@ trailApp.app.get('/trailcoords', function(req, res) {
 });
 
 trailApp.app.get('/traildata/:trailname', function(req, res) {
-    trailData.features.forEach(function(trail) {
+    trailData.forEach(function(trail) {
         if(trail.properties.trail_name === req.params.trailname)
             res.json(trail);
     });
