@@ -89,7 +89,7 @@ var TrailApp = function() {
         // parse JSON
         request(trailDataUrl, function(err, trails, body) {
             if(err)                          console.err(err);
-            // else if(trails.statusCode != 200) console.err(trails.statusCode + ' in trail request');
+            else if(trails.statusCode != 200) console.err(trails.statusCode + ' in trail request');
             else {
                 trailData = JSON.parse(body);
                 trailData.forEach(function(trail) {
