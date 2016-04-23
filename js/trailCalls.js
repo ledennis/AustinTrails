@@ -48,8 +48,8 @@ app.controller('ctrl', function($scope, $http) {
             }
 
             // save data for later reference
-            currentTrailJson = res.data;
-            $scope.trailJson = res.data;
+            currentTrailJson = res.data.features;
+            $scope.trailJson = res.data.features;
 
             // format opening/closing hours based on availability
             // var open_div = document.getElementById("status_open");
