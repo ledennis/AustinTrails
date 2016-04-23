@@ -97,7 +97,7 @@ app.controller('ctrl', function($scope, $http) {
         marker.addListener('click', function() {
             if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-10.png');
             selectedMarker = marker;
-            setPool(infoData);
+            setTrail(infoData);
             marker.setIcon("assets/pool-icon-50.png");
 
         });
