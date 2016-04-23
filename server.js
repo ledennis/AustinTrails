@@ -10,7 +10,7 @@ var TrailApp = function() {
 
     self.setupVariables = function() {
         self.ipaddress = process.env.OPENSHIFT_NODEJS_IP;
-        self.port      = process.env.OPENSHIFT_NODEJS_PORT || 443;
+        self.port      = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
         if (typeof self.ipaddress === "undefined") {
             console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
@@ -109,7 +109,7 @@ var TrailApp = function() {
 };
 
 /** JSON stuff **/
-var trailDataUrl = "https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/Metadata/AustinParksandRec.json?token=AEby-Ldh8x6n69_Y23HaemEHpntEzyqyks5XIpwYwA%3D%3D";
+var trailDataUrl = "https://data.austintexas.gov/resource/jfqh-bqzu.json";
 
 var trailApp = new TrailApp();
 trailApp.initialize();
