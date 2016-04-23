@@ -1,4 +1,4 @@
-var currentPoolJson;
+var currentTrailJson;
 var map;
 var selectedMarker;
 var getCenter;
@@ -8,33 +8,33 @@ var app = angular.module('app', []);
 app.controller('ctrl', function($scope, $http) {
     $http({
         method : "GET",
-        url : "poolcoords"
+        url : "trailcoords"
     }).then(function(res) {
-        res.data.forEach(function(pool) {
-            nameToMarker[pool.name] = createMarker(pool.latitude, pool.longitude, pool.name);
-            $('#poolNameList').append(
-                $('<li id="' + pool.name + '">').append(
+        res.data.forEach(function(trail) {
+            nameToMarker[trail.name] = createMarker(trail.latitude, trail.longitude, trail.name);
+            $('#trailNameList').append(
+                $('<li id="' + trail.name + '">').append(
                     $('<button class="btn btn-link">').append(
-                        pool.name
+                        trail.name
                     ).click(function() {
-                        setPool(pool.name);
+                        setTrail(trail.name);
                     })
                 )
             );
         });
     });
 
-    function setPool(poolName) {
+    function setTrail(trailName) {
         $http({
             method: "GET",
-            url: "pooldata/" + poolName
+            url: "traildata/" + trailName
         }).then(function(res) {
 
             if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-15.png');
-            var marker = nameToMarker[poolName];
+            var marker = nameToMarker[trailName];
             selectedMarker = marker;
             // marker.setAnimation(google.maps.Animation.DROP);
-            marker.setIcon('assets/pool-icon-40.png');
+            marker.setIcon('assets/trail-icon-50.png');
 
             if(!($('#info').is(":visible"))) {    
                 $('#info').removeClass('hidden');
@@ -48,20 +48,20 @@ app.controller('ctrl', function($scope, $http) {
             }
 
             // save data for later reference
-            currentPoolJson = res.data;
-            $scope.poolJson = res.data;
+            currentTrailJson = res.data;
+            $scope.trailJson = res.data;
 
             // format opening/closing hours based on availability
-            var open_div = document.getElementById("status_open");
-            var closed_div = document.getElementById("status_closed");
-            if (currentPoolJson.status === "Closed") {
-                closed_div.classList.remove("hidden");
-                open_div.classList.add("hidden");
-                currentPoolJson.open_date = new Date(currentPoolJson.open_date).toDateString();
-            } else {
-                open_div.classList.remove("hidden");
-                closed_div.classList.add("hidden");
-            }
+            // var open_div = document.getElementById("status_open");
+            // var closed_div = document.getElementById("status_closed");
+            // if (currentTrailJson.status === "Closed") {
+            //     closed_div.classList.remove("hidden");
+            //     open_div.classList.add("hidden");
+            //     currentTrailJson.open_date = new Date(currentTrailJson.open_date).toDateString();
+            // } else {
+            //     open_div.classList.remove("hidden");
+            //     closed_div.classList.add("hidden");
+            // }
         });
     }
 
@@ -76,6 +76,7 @@ app.controller('ctrl', function($scope, $http) {
         };
         map = new google.maps.Map(document.getElementById("map"), mapProp);
         getCenter = map.getCenter();
+        //map.data.loadGeoJson('trails.json');
     }
     google.maps.event.addDomListener(window, 'load', initMap);
 
@@ -95,8 +96,8 @@ app.controller('ctrl', function($scope, $http) {
         marker.addListener('click', function() {
             if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-15.png');
             selectedMarker = marker;
-            setPool(infoData);
-            marker.setIcon("assets/pool-icon-40.png");
+            setTrail(infoData);
+            marker.setIcon("assets/trail-icon-50.png");
 
         });
         return marker;
