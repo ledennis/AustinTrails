@@ -3,8 +3,8 @@ var express = require('express');
 var fs      = require('fs');
 var request = require('request');
 
-var poolData;
-var PoolApp = function() {
+var trailData;
+var TrailApp = function() {
 
     var self = this;
 
@@ -87,13 +87,13 @@ var PoolApp = function() {
         self.initializeServer();
 
         // parse JSON
-        request(poolDataUrl, function(err, pools, body) {
+        request(trailDataUrl, function(err, trails, body) {
             if(err)                          console.err(err);
-            else if(pools.statusCode != 200) console.err(pools.statusCode + ' in pool request');
+            else if(trail.statusCode != 200) console.err(trails.statusCode + ' in trail request');
             else {
-                poolData = JSON.parse(body);
-                poolData.forEach(function(pool) {
-                    pool.location_1.human_address = eval("(" + pool.location_1.human_address + ")"); 
+                trailData = JSON.parse(body);
+                trailData.features.forEach(function(trail) {
+                    trail.properties.trail_name = eval("(" + trail.properties.trail_name + ")"); 
                 });
             }
         });
@@ -109,34 +109,34 @@ var PoolApp = function() {
 };
 
 /** JSON stuff **/
-var poolDataUrl = "https://data.austintexas.gov/resource/jfqh-bqzu.json";
+var trailDataUrl = "https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/Metadata/AustinParksandRec.json?token=AEby-Ldh8x6n69_Y23HaemEHpntEzyqyks5XIpwYwA%3D%3D";
 
-var poolApp = new PoolApp();
-poolApp.initialize();
-poolApp.start();
+var trailApp = new TrailApp();
+trailApp.initialize();
+trailApp.start();
 
-poolApp.app.get('/poolnames', function(req, res) {
-    var poolNames = [];
-    poolData.forEach(function(pool) {
-        poolNames.push(pool.pool_name);
+trailApp.app.get('/trailnames', function(req, res) {
+    var trailNames = [];
+    trailData.features.forEach(function(trail) {
+        trailNames.push(trail.properties.trail_name);
     });
-    res.send(poolNames);
+    res.send(trailNames);
 });
 
-poolApp.app.get('/poolcoords', function(req, res) {
-    var poolCoords = [];
-    poolData.forEach(function(pool) {
-       poolCoords.push({
-           name: pool.pool_name,
-           latitude: pool.location_1.latitude,
-           longitude: pool.location_1.longitude})
+trailApp.app.get('/trailcoords', function(req, res) {
+    var trailCoords = [];
+    trailData.features.forEach(function(trail) {
+       trailCoords.push({
+           name: trail.properties.trail_name,
+           latitude: trail.geometry.coordinates[0][0],
+           longitude: trail.geometry.coordinates[0][1]})
     });
-    res.send(poolCoords);
+    res.send(trailCoords);
 });
 
-poolApp.app.get('/pooldata/:poolname', function(req, res) {
-    poolData.forEach(function(pool) {
-        if(pool.pool_name === req.params.poolname)
-            res.json(pool);
+trailApp.app.get('/traildata/:trailname', function(req, res) {
+    trailData.features.forEach(function(trail) {
+        if(trail.properties.trail_name === req.params.trailname)
+            res.json(trail);
     });
 });
