@@ -109,7 +109,7 @@ var TrailApp = function() {
 };
 
 /** JSON stuff **/
-var trailDataUrl = "https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/Metadata/AustinParksandRec.json?token=AEby-Ldh8x6n69_Y23HaemEHpntEzyqyks5XIpwYwA%3D%3D";
+var trailDataUrl = "https://raw.githubusercontent.com/ledennis/Parks-and-Recreations/master/traildata.geojson";
 
 var trailApp = new TrailApp();
 trailApp.initialize();
