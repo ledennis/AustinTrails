@@ -76,7 +76,7 @@ app.controller('ctrl', function($scope, $http) {
         };
         map = new google.maps.Map(document.getElementById("map"), mapProp);
         getCenter = map.getCenter();
-        //map.data.loadGeoJson('trails.json');
+        map.data.loadGeoJson('trails.json');
     }
     google.maps.event.addDomListener(window, 'load', initMap);
 
