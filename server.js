@@ -149,8 +149,8 @@ poolApp.app.get('/trailcoords', function(req, res) {
     trailData.features.forEach(function(trail) {
        trailCoords.push({
            name: trail.properties.trail_name,
-           latitude: trail.geometry.coordinates[0][0],
-           longitude: trail.geometry.coordinates[0][1]})
+           latitude: trail.geometry.coordinates[0][1],
+           longitude: trail.geometry.coordinates[0][0]})
     });
     res.send(trailCoords);
 });
