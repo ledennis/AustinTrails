@@ -33,7 +33,7 @@ app.controller('ctrl', function($scope, $http) {
             if(selectedMarker) selectedMarker.setIcon('assets/icon-circle-15.png');
             var marker = nameToMarker[trailName];
             selectedMarker = marker;
-            // marker.setAnimation(google.maps.Animation.DROP);
+            marker.setAnimation(google.maps.Animation.DROP);
             marker.setIcon('assets/trail-icon-50.png');
 
             if(!($('#info').is(":visible"))) {    
@@ -70,7 +70,7 @@ app.controller('ctrl', function($scope, $http) {
                 $('#map').addClass('col-md-push-3').addClass('col-md-7').addClass('col-lg-7');
                 google.maps.event.trigger(map, "resize");
                 map.setCenter(getCenter);
-                // initMap();
+                initMap();
             }
 
             // save data for later reference
@@ -105,21 +105,54 @@ app.controller('ctrl', function($scope, $http) {
         map.data.loadGeoJson('trails.json');
         map.data.setStyle({
           strokeWeight: 3,
-          strokeColor: '#ef443c'
+          strokeColor: '#006600'
         });
+
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var icons = {
+          parking: {
+            name: 'Parking',
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            name: 'Library',
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            name: 'Info',
+            icon: iconBase + 'info-i_maps.png'
+          }
+        };
+
+        var legend = document.getElementById('legend');
+        for (var key in icons) {
+          var type = icons[key];
+          var name = type.name;
+          var icon = type.icon;
+          var div = document.createElement('div');
+          div.innerHTML = '<img src="' + icon + '"> ' + name;
+          legend.appendChild(div);
+        }
+
+        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
     }
     google.maps.event.addDomListener(window, 'load', initMap);
 
     function updtPosition(position) {
         var panPoint = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         map.panTo(panPoint);
+        var marker = new google.maps.Marker({
+            position: { lat: position.coords.latitude, lng: position.coords.longitude},
+            map: map,
+            animation: google.maps.Animation.DROP
+        });
     }
 
     function createMarker(latitude, longitude, infoData) {
         var marker = new google.maps.Marker({
             position: {lat: Number(latitude), lng: Number(longitude)},
             animation: google.maps.Animation.DROP,
-            icon: "assets/icon-circle-15.png"
+            icon: "assets/icon-circle-15.png",
         });
 
         marker.setMap(map);

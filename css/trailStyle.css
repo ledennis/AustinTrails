@@ -72,6 +72,13 @@ h4 {
 	font-weight: normal;
 }
 
+<style>
+  #legend {
+    background: white;
+    padding: 10px;
+  }
+</style>
+
 @media(max-width:767px){
 	#map {
 		height: 100%;

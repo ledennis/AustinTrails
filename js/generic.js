@@ -39,6 +39,32 @@ app.controller('ctrl', function($scope, $http) {
             if(!($('#info').is(":visible"))) {    
                 $('#info').removeClass('hidden');
 
+                var mq = window.matchMedia( "(max-width: 991px)" );
+                if (mq.matches) {
+                    $('#info').css('height', '25%');
+                    $('#map').css('height', '75%');
+                }
+
+                if (matchMedia) {
+                    var mq = window.matchMedia("(min-width: 992px)");
+                    mq.addListener(WidthChange);
+                    WidthChange(mq);
+                }
+
+                // media query change
+                function WidthChange(mq) {
+                    if (mq.matches) {
+                        // window width is at least 500px
+                        $('#info').css('height', '100%');
+                        $('#map').css('height', '100%');
+                    } else {
+                        // window width is less than 500px
+                        $('#info').css('height', '25%');
+                        $('#map').css('height', '75%');
+                    }
+
+                }
+
                 // Messy...
                 $('#map').removeClass('col-md-10').removeClass('col-lg-10');
                 $('#map').addClass('col-md-push-3').addClass('col-md-7').addClass('col-lg-7');
