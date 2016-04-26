@@ -40,6 +40,11 @@ ul#trailNameList {
 	list-style-type: none;
 	padding-left: 0;
 }
+
+#trailNameList .btn{
+	white-space: normal
+}
+
 #trailNameList .btn-link {
 	color: white;
 	padding: 2px;
@@ -55,24 +60,26 @@ ul#trailNameList {
 	outline:none;
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 14px;
 }
 
-#trailNameList .btn{
-	white-space: normal
-}
 
 h1 {
-	font-size: 24px;
-	font-weight:500;
+	font-size: 22px;
+	font-weight:normal;
 }
 h3 {
-	font-size:15px;
+	font-size:14px;
 	font-weight: normal;
 }
 
 h4 {
-	font-weight: normal;
+	font-size:14px;
+	font-weight: bold;
+}
+
+p {
+	margin: 0 0 6px;
 }
 
 <style>
