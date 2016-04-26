@@ -1,4 +1,4 @@
-@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); }
+@font-face { font-family: "Helvetica", Sans-Serif; }
 
 .full-height {
 	height: 100%;
@@ -58,7 +58,7 @@ ul#poolNameList {
 
 ul#trailNameList {
 	list-style-type: none;
-	padding-left: 0;
+	padding: 5px 0 0 0;
 }
 #trailNameList .btn-link {
 	color: white;
@@ -80,7 +80,7 @@ ul#trailNameList {
 
 h1 {
 	font-size: 24px;
-	font-weight:500;
+	font-weight:normal;
 }
 h3 {
 	font-size:15px;

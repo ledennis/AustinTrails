@@ -1,4 +1,4 @@
-@font-face { font-family: Helvetica Neue; src: url('Delicious-Roman.otf'); }
+@font-face { font-family: "Helvetica", Sans-Serif; }
 
 .full-height {
 	height: 100%;
@@ -43,6 +43,8 @@ html,body,.container {
 
 .title img{
 	padding: 23px 0;
+	width: 100%;
+	max-width:164px;
 }
 
 
@@ -70,7 +72,6 @@ ul#trailNameList {
     text-align: left;
     transition: all .15s ease;
     font-size: 14px;
-    border-bottom: solid 1px #727AAB;
     min-height: 40px;
 
 }
