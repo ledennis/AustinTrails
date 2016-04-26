@@ -48,13 +48,17 @@
 
 			<div class="hidden col-xs-12 col-sm-12 col-md-3 col-md-pull-7 col-lg-3 full-height" id="info">
 
-				<div style='background: no-repeat #222 url("https://maps.googleapis.com/maps/api/streetview?size=450x200&location={{poolJson.location_1.latitude}},{{poolJson.location_1.longitude}}&heading=151.78&pitch=-0.76&key=AIzaSyDqBNGuFGXXOLFIEfUxze-Kv84Zk9RgjK0") center; background-size: cover;' class="picPrev span3 col-centered hidden-sm hidden-xs"></div>
+				<div class="info-top">
+                    <!-- Google Street View Image -->
+                    <div style='background: no-repeat #222 url("https://maps.googleapis.com/maps/api/streetview?size=450x200&location={{poolJson.location_1.latitude}},{{poolJson.location_1.longitude}}&heading=151.78&pitch=-0.76&key=AIzaSyDqBNGuFGXXOLFIEfUxze-Kv84Zk9RgjK0") center; background-size: cover;' class="picPrev span3 col-centered hidden-sm hidden-xs"></div>
 
-				<!-- Pool Name -->
-				<h1> {{poolJson.pool_name}} </h1>
+				    <!-- Pool Name -->
+				    <h1> {{poolJson.pool_name}} </h1>
 
-				<!-- Pool Address -->
-				<h4> {{poolJson.location_1.human_address.address}} {{poolJson.location_1.human_address.city}}, {{poolJson.location_1.human_address.state}} </h4>
+				    <!-- Pool Address -->
+				    <h4> {{poolJson.location_1.human_address.address}} {{poolJson.location_1.human_address.city}}, {{poolJson.location_1.human_address.state}} </h4>
+
+                </div>
 				
 				<!-- Google Maps Link (uses human_address) -->
 				<a target="_blank" href="http://maps.google.com/?q={{poolJson.location_1.human_address.address}} {{poolJson.location_1.human_address.city}} {{poolJson.location_1.human_address.state}}">View in Google Maps</a>
