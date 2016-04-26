@@ -44,7 +44,6 @@ ul#poolNameList {
 	padding: 2px;
 	max-width: inherit;
 	word-wrap: break-word;
-	word-break:break-all;
     width: 100%;
     text-align: left;
     transition: all .15s ease;
