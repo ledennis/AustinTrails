@@ -93,7 +93,8 @@ h4 {
 	font-weight: normal;
 }
 
-@media(max-width:767px){
+
+@media(min-width:0px) and(max-width:767px){
 	#map {
 		height: 75%;
 	}

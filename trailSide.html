@@ -36,8 +36,11 @@
         <div class="row full-height">
 
             <div class="col-xs-hidden col-sm-hidden  col-md-2 col-lg-2 full-height" id="list">
+                <div class="title">
+                    <img src="assets/TrailsLogo@2x.png"/>
+                </div>
                 <ul id="trailNameList"></ul>
-            </div>
+            </div> 
 
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 full-height" id="map"></div>
             
@@ -55,7 +58,12 @@
                     <h1> {{trailJson.properties.trail_name}} </h1>
 
                     <!-- Trail Address -->
-                    <h4> {{trailJson.properties.location}}</h4>
+                    <div class="sub-info">
+                        <h4> {{trailJson.properties.location}}</h4>
+
+                        <!-- <h4>{{trailJson.properties.usage_distance}}</h4> -->
+                    </div>
+
                 </div>
 
                 <div class="info-bottom">
@@ -66,7 +74,7 @@
                     <p> ADA Accessible: {{trailJson.properties.ADA_Accessible}} </p>
                 
                     <!-- Google Maps Link (uses human_address) -->
-                    <a target="_blank" href="http://maps.google.com/?q={{trailJson.properties.location}} {{Austin}} {{TX}}">View in Google Maps</a>
+                    <a target="_blank" href="http://maps.google.com/?q={{trailJson.properties.location}} {{Austin}} {{TX}}">Get Directions in Google Maps</a>
 
                 
                     <br>
