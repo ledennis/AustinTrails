@@ -104,8 +104,8 @@ app.controller('ctrl', function($scope, $http) {
         getCenter = map.getCenter();
         map.data.loadGeoJson('trails.json');
         map.data.setStyle({
-          strokeWeight: 3,
-          strokeColor: '#006600'
+          strokeWeight: 2,
+          strokeColor: 'blue'
         });
 
         // var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
